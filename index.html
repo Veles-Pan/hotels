@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TOXIN</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body class="root">
+
+        <header class="header">
+            <img class="header__logo" alt="" src="./images/Logo.svg">
+            <nav class="navigation">
+                <a class="navigation__element" href="#" target="_self">О нас</a>
+                <a class="navigation__element" href="#" target="_self">Услуги</a>
+                <a class="navigation__element" href="#" target="_self">Вакансии</a>
+                <a class="navigation__element" href="#" target="_self">Носовсти</a>
+                <a class="navigation__element" href="#" target="_self">Соглашения</a>
+            </nav>
+            <div class="header__buttons">
+                <button class="header__login">Войти</button>
+                <button class="header__registration">Зарегистрироваться</button>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="intro">
+                <div class="intro__card">
+                    <h2 class="intro__title">Найдем номера под ваши пожелания</h2>
+                    <div class="arrival">
+                        <label for="arrival-date" class="intro__label">Прибытие</label>
+                        <input class= "intro__item intro__item_el_arrivaldate" type="date" id="arrival-date" name="arrival-date">
+                    </div>
+                    
+                    <div class="departure">
+                        <label for="departure-date" class="intro__label">Выезд</label>
+                        <input class= "intro__item intro__item_el_departuredate" type="date" id="departure-date" name="departure-date">
+                    </div>
+                    
+                    <div class="guests">
+                        <label for="guest-number" class="intro__label">Гости</label>
+                        <select class="intro__item intro__item_el_guest-number" id="guest-number" name="guest-number">
+                            <option value="ibm">IBM Plex Serif</option> 
+                            <option value="ubuntu">Ubuntu</option> 
+                            <option value="istok">Istok Web</option>
+                        </select>
+                    </div>
+                    <button class="intro__button">Подобрать номер</button>
+
+                </div>
+
+                <p class="intro__text">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+            </section>
+
+        </main>
+    </body>
+</html>
+    

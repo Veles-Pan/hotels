@@ -1,0 +1,179 @@
+@font-face {
+    src: url(./fonts/MontserratBold.ttf);
+    font-family: 'Monserat';
+    font-weight: bold;
+}
+
+@font-face {
+    src: url(./fonts/MontserratRegular.ttf);
+    font-family: 'Monserat';
+    font-weight: normal;
+}
+
+.root {
+    font-family: 'Monserat';
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80.5vw;
+    margin: 15px auto;
+}
+
+.navigation {
+    display: grid;
+    gap: 0 20px;
+    grid-template-columns: repeat(5, auto);
+
+}
+
+.navigation__element {
+    text-decoration: none;
+    color: #1F2041;
+    opacity: .5;
+    transition: opacity .15s ease-in;
+
+}
+
+.navigation__element:hover {
+    opacity: .75;
+    cursor: pointer;
+}
+
+.header__login {
+    width: 87px;
+    height: 34px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-radius: 22px;
+    border-color: #BC9CFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BC9CFF;
+    margin-right: 20px;
+}
+
+.header__registration {
+    width: 196px;
+    height: 34px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-style: none;
+    border-radius: 22px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.intro {
+    position: relative;
+    background-image: url(./images/intro.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1440px;
+    height: 57.6vw;
+    max-height: 830px;
+    margin: auto;
+}
+
+.intro__title {
+    grid-area: title;
+    font-size: 24px;
+    width: 320px;
+    margin: 40px auto 21px;
+}
+
+.arrival {
+    grid-area: arrival;
+}
+
+.departure {
+    grid-area: departure;
+}
+
+.guests {
+    grid-area: guests;
+}
+
+.intro__button {
+    grid-area: button;
+    width: 320px;
+    height: 44px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-style: none;
+    border-radius: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.intro__text {
+    position: absolute;
+    width: auto;
+    max-width: 300px;
+    margin: 0;
+    bottom: 8%;
+    right: 9%;
+    text-align: right;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1F2041;
+    opacity: .75;
+}
+
+
+.intro__card {
+    background-color: #ffffff;
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "arrival departure"
+    "guests guests"
+    "button button";
+    gap: 21px 20px;
+    grid-template-columns: 150px 150px;
+    width: 380px;
+    height: 374px;
+    top: 8.4%;
+    left: 9.7%;
+    justify-content: center;
+}
+
+.intro__item {
+    border: 0;
+    width: 100%;
+    height: 24px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #bcbcc4;
+    background-color: transparent;
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: inherit;
+  }
+
+  .intro__label {
+    font-size: 12px;
+    line-height: auto;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .intro__item[type="date"] {
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 4px;
+    font-family: inherit;
+  }
