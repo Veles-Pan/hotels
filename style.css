@@ -10,9 +10,14 @@
     font-weight: normal;
 }
 
+p {
+    margin: 0;
+}
+
 .root {
     font-family: 'Monserat';
     margin: 0;
+    color: #1F2041;
 }
 
 .header {
@@ -81,6 +86,7 @@
     height: 57.6vw;
     max-height: 830px;
     margin: auto;
+    
 }
 
 .intro__title {
@@ -112,6 +118,21 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+}
+
+.intro__arrow {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -120,12 +141,11 @@
     width: auto;
     max-width: 300px;
     margin: 0;
-    bottom: 8%;
-    right: 9%;
+    bottom: 1.92%;
+    right: 9.3%;
     text-align: right;
     font-size: 14px;
     line-height: 24px;
-    color: #1F2041;
     opacity: .75;
 }
 
@@ -146,34 +166,280 @@
     top: 8.4%;
     left: 9.7%;
     justify-content: center;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+    z-index: 1;
 }
 
 .intro__item {
     border: 0;
     width: 100%;
     height: 24px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-bottom: 1px solid #bcbcc4;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
     background-color: transparent;
     margin-top: 5px;
     font-size: 14px;
     font-family: inherit;
-  }
+    height: 44px;
+    padding-left: 15px;
+}
 
-  .intro__label {
+.datepicker {
+    background-image: url('./images/expand_more.svg');
+    background-position: calc(100% - .5rem), 100% 0;
+     background-repeat: no-repeat;
+}
+
+
+.intro__label {
     font-size: 12px;
     line-height: auto;
     display: block;
     text-transform: uppercase;
     font-weight: bold;
-  }
+}
 
-  .intro__item[type="date"] {
-    background-color: white;
-    color: black;
+.calendar {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 58%;
+    left: 7.5%;
+    padding: 20px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     border-radius: 4px;
-    padding: 0 4px;
+    z-index: 2;
+}
+
+.intro__item:focus {
+    outline-style: none;
+}
+
+.intro__item::-webkit-input-placeholder {
+    opacity: .75;
+}
+
+.intro__item:focus+.calendar {
+    display: flex;
+}
+
+
+.calendar__row {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+}
+
+.calendar__row:first-child {
+    margin-bottom: 30px;
+}
+
+.calendar__cell {
+      align-self: center;
+      justify-self: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-size: 12px;
+}
+
+.calendar__year {
+      font-size: 19px;
+      font-weight: bold;
+}
+
+.calendar__arrow {
+      font-size: 24px;
+      line-height: .83%;
+      color: #BC9CFF;
+      display: flex;
+}
+
+.calendar__arrow_direction_left {
+    margin-right: 57px;
+}
+
+.calendar__arrow_direction_right {
+    margin-left: 57px;
+}
+
+.calendar__week {
+      color: #BC9CFF;
+      font-weight: bold;
+}
+
+.calendar__day {
+    opacity: .5;
+    vertical-align: middle;
+    z-index: 2;
+}
+
+.calendar__day_transparent {
+    opacity: .25;
+}
+
+.calendar__button {
+    font-weight: bold;
+    color: #BC9CFF;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.calendar__button:first-child {
+    margin-right: 124px;
+}
+
+.calendar__day:hover {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 22px;
+    color: #FFFFFF;
+    font-weight: bold;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.calendar__day_checked {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    color: #FFFFFF;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.calendar__day_colored {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.25;
+    height: 40px;
+    width: 160px;
+    position: absolute;
+    left: 22px;
+    z-index: 1;
+}
+
+.footer__widgets {
+    display: flex;
+    margin: 100px 9.72%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__bar {
+    display: flex;
+    margin: 26px 9.72%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer__logo {
+    width: 106px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.footer__text {
+    font-size: 14px;
+    line-height: 24px;
+    width: 260px;
+    opacity: .75;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__subtitle {
+    margin: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #1F2041;
+    opacity: .5;
+    font-size: 14px;
+    margin-bottom: 20px;
+    transition: opacity .15s ease-in;
+}
+
+.footer__link:hover {
+    opacity: .75;
+    cursor: pointer;
+}
+
+
+.footer__element {
+    margin-bottom: 20px;
+}
+
+.footer__element:last-child {
+    margin-bottom: 0;
+}
+
+.footer__email {
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+    background-color: transparent;
+    margin-top: 5px;
+    font-size: 14px;
     font-family: inherit;
-  }
+    height: 44px;
+    width: 100%;
+    background-image: url('./images/arrow_forward.svg');
+    background-position: calc(100% - .8rem), 100% 0;
+     background-repeat: no-repeat;
+     padding-left: 15px;
+}
+
+.footer__email::-webkit-input-placeholder {
+    opacity: .25;
+}
+
+.footer__email:focus {
+    outline-style: none;
+}
+
+.footer__social {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0 20px;
+}
+
+.footer__copyright {
+    opacity: .75;
+    font-size: 14px;
+}
+
+.footer__social-link:hover {
+    opacity: .75;
+}
