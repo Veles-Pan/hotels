@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search room</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="search.css">
+    </head>
+
+    <body class="root">
+        
+        <header class="header">
+            <img class="header__logo" alt="" src="./images/Logo.svg">
+            <nav class="navigation">
+                <a class="navigation__element" href="#" target="_self">О нас</a>
+                <a class="navigation__element" href="#" target="_self">Услуги</a>
+                <a class="navigation__element" href="#" target="_self">Вакансии</a>
+                <a class="navigation__element" href="#" target="_self">Носовсти</a>
+                <a class="navigation__element" href="#" target="_self">Соглашения</a>
+            </nav>
+            <div class="header__buttons">
+                <button class="header__login">Войти</button>
+                <button class="header__registration">Зарегистрироваться</button>
+            </div>
+        </header>
+
+        <main class="content">
+
+            <section class="filters">
+
+                <article class="filters__filter">
+                    <label for="date" class="filters__label">Даты пребывания в отеле</label>
+                    <input class= "date filters__item" type="text" id="date" name="date" placeholder="19 авг - 23 авг">
+                </article>
+
+                <article class="filters__filter">
+                    <label for="guests" class="filters__label">Гости</label>
+                    <input class= "guests filters__item" type="text" id="guests" name="guests" placeholder="3 взрослых">
+
+                </article>
+
+                <article class="filters__filter">
+                    <h3 class="filters__label">Диапазон цены</h3>
+                    <div class= "filters__item cost" id="cost" name="cost"></div>
+                    <p class="filters__text">Стоимость за сутки пребывания в номере</p>
+
+                </article>
+
+                <article class="filters__filter">
+                    <h3 for="rules" class="filters__label">Правила дома</h3>
+
+                    <label for="smoking" class="form__label form__label_direction_right">
+                        <input type="checkbox" name="extra-option" id="smoking" class="form__item form__item_el_extra-options" value="smoking">
+                        <span class="form__label-text">Можно курить</span>
+                    </label> 
+                                
+                    <label for="pet" class="form__label form__label_direction_right">
+                      <input type="checkbox" name="extra-option" id="pet" class="form__item form__item_el_extra-options" value="pet" checked>
+                      <span class="form__label-text">Можно с питомцем</span>
+                    </label> 
+
+                    <label for="invite" class="form__label form__label_direction_right">
+                        <input type="checkbox" name="extra-option" id="invite" class="form__item form__item_el_extra-options" value="invite" checked>
+                        <span class="form__label-text">Можно пригласить гостей (до 10 человек)</span>
+                      </label> 
+
+                </article>
+
+                <article class="filters__filter">
+                    <label for="accesibility" class="filters__label">Доступность</label>
+
+                </article>
+
+                <article class="filters__filter">
+                    <label for="facilities" class="filters__label">Удобства номера</label>
+
+                </article>
+
+                <article class="filters__filter">
+                    <label for="additional" class="filters__label">Дополнительные удобства</label>
+                </article>
+
+            </section>
+
+            <section class="rooms">
+                <h2 class="rooms__title">Номера, которые мы для вас подобрали</h2>
+                <article class="grid-area">
+                    <a class="card" href="#">
+                        <img class="card__image" alt="" src="./images/1room.png">
+                            <p class="card__number"><span class="card__n">&#8470;</span> 888</p>
+                            <p class="card__cost"><span class="card__cost_bold">9 900&#8381;</span> в сутки</p>
+                            <div class="card__line"></div>
+                            <p class="card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            <p class="card__reviews"><span class="card__cost_bold">145</span> Отзывов</p>
+                    </div>
+                    <a class="card" href="#">
+                        <img class="card__image" alt="" src="./images/2room.png">
+                            <p class="card__number"><span class="card__n">&#8470;</span> 840</p>
+                            <p class="card__cost"><span class="card__cost_bold">9 900&#8381;</span> в сутки</p>
+                            <div class="card__line"></div>
+                            <p class="card__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="card__reviews"><span class="card__cost_bold">65</span> Отзывов</p>
+                    </div>
+                    <a class="card" href="#">
+                        <img class="card__image" alt="" src="./images/3room.png">
+
+                            <p class="card__number"><span class="card__n">&#8470;</span> 980</p>
+                            <p class="card__cost"><span class="card__cost_bold">8 500&#8381;</span> в сутки</p>
+                            <div class="card__line"></div>
+                            <p class="card__stars">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                            <p class="card__reviews"><span class="card__cost_bold">35</span> Отзывов</p>
+
+                    </div>
+                    <a class="card" href="#">
+                        <img class="card__image" alt="" src="./images/4room.png">
+
+                            <p class="card__number"><span class="card__n">&#8470;</span> 856</p>
+                            <p class="card__cost"><span class="card__cost_bold">7 300&#8381;</span> в сутки</p>
+                            <div class="card__line"></div>
+                            <p class="card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            <p class="card__reviews"><span class="card__cost_bold">19</span> Отзывов</p>
+
+                    </div>
+                    <a class="card" href="#">
+                        <img class="card__image" alt="" src="./images/5room.png">
+
+                            <p class="card__number"><span class="card__n">&#8470;</span> 740</p>
+                            <p class="card__cost"><span class="card__cost_bold">6 000&#8381;</span> в сутки</p>
+                            <div class="card__line"></div>
+                            <p class="card__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="card__reviews"><span class="card__cost_bold">44</span> Отзывов</p>
+
+                    </a>
+                    <a class="card" href="#">
+                        <img class="card__image" alt="" src="./images/6room.png">
+
+                            <p class="card__number"><span class="card__n">&#8470;</span> 982</p>
+                            <p class="card__cost"><span class="card__cost_bold">5 800&#8381;</span> в сутки</p>
+                            <div class="card__line"></div>
+                            <p class="card__stars">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                            <p class="card__reviews"><span class="card__cost_bold">56</span> Отзывов</p>
+
+                    </a>
+                    <a class="card" href="#">
+                        <img class="card__image" alt="" src="./images/7room.png">
+
+                            <p class="card__number"><span class="card__n">&#8470;</span> 678</p>
+                            <p class="card__cost"><span class="card__cost_bold">5 500&#8381;</span> в сутки</p>
+                            <div class="card__line"></div>
+                            <p class="card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            <p class="card__reviews"><span class="card__cost_bold">45</span> Отзывов</p>
+
+                    </a>
+                    <a class="card" href="#">
+                        <img class="card__image" alt="" src="./images/8room.png">
+
+                            <p class="card__number"><span class="card__n">&#8470;</span> 450</p>
+                            <p class="card__cost"><span class="card__cost_bold">5 300&#8381;</span> в сутки</p>
+                            <div class="card__line"></div>
+                            <p class="card__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="card__reviews"><span class="card__cost_bold">39</span> Отзывов</p>
+
+                    </a>
+                    <a class="card" href="#">
+                        <img class="card__image" alt="" src="./images/9room.png">
+
+                            <p class="card__number"><span class="card__n">&#8470;</span> 350</p>
+                            <p class="card__cost"><span class="card__cost_bold">5 000&#8381;</span> в сутки</p>
+                            <div class="card__line"></div>
+                            <p class="card__stars">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                            <p class="card__reviews"><span class="card__cost_bold">77</span> Отзывов</p>
+
+                    </a>
+                    <a class="card" href="#">
+                        <img class="card__image" alt="" src="./images/10room.png">
+
+                            <p class="card__number"><span class="card__n">&#8470;</span> 666</p>
+                            <p class="card__cost"><span class="card__cost_bold">5 000&#8381;</span> в сутки</p>
+                            <div class="card__line"></div>
+                            <p class="card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            <p class="card__reviews"><span class="card__cost_bold">25</span> Отзывов</p>
+
+                    </a>
+                    <a class="card" href="#">
+                        <img class="card__image" alt="" src="./images/11room.png">
+
+                            <p class="card__number"><span class="card__n">&#8470;</span> 444</p>
+                            <p class="card__cost"><span class="card__cost_bold">5 000&#8381;</span> в сутки</p>
+                            <div class="card__line"></div>
+                            <p class="card__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="card__reviews"><span class="card__cost_bold">15</span> Отзывов</p>
+
+                    </a>
+                    <a class="card" href="#">
+                        <img class="card__image" alt="" src="./images/12room.png">
+
+                            <p class="card__number"><span class="card__n">&#8470;</span> 352</p>
+                            <p class="card__cost"><span class="card__cost_bold">5 000&#8381;</span> в сутки</p>
+                            <div class="card__line"></div>
+                            <p class="card__stars">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                            <p class="card__reviews"><span class="card__cost_bold">55</span> Отзывов</p>
+
+                    </a>
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__widgets">
+                <div class="footer__about">
+                    <img class="footer__logo" src="./images/Logo.svg" alt="лого">
+                    <p class="footer__text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+                </div>
+                <nav class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__element"><h3 class="footer__subtitle">Навигация</h3></li>
+                        <li class="footer__element"><a class="footer__link" href="#">О нас</a></li>
+                        <li class="footer__element"> <a class="footer__link" href="#">Новости</a></li>
+                        <li class="footer__element"><a class="footer__link" href="#">Служба поддержки</a></li>
+                        <li class="footer__element"><a class="footer__link" href="#">Услуги</a></li>
+                    </ul>
+                </nav>
+                <ul class="footer__list">
+                    <li class="footer__element"><h3 class="footer__subtitle">О нас</h3></li>
+                    <li class="footer__element"><a class="footer__link" href="#">О сервисе</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Наша команда</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Вакансии</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Инвесторы</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__element"><h3 class="footer__subtitle">Служба поддержки</h3></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Соглашения</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Сообщества</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Связь с нами</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__element"><h3 class="footer__subtitle">Подписка</h3></li>
+                    <li class="footer__element"><p class="footer__text">Получайте специальные предложения и новости сервиса</p></li>
+                    <li class="footer__element"><input class="footer__email" type="email" placeholder="Email"></li>
+                </ul>
+            </div>
+            <div class="footer__bar">
+                <p class="footer__copyright">Copyright &copy;&nbsp;2018 Toxin отель. Все права зачищены.</p>
+                <div class="footer__social">
+                    <a href="#"><img class="footer__social-link" src="./images/twitter.svg" alt="твиттер"></a>
+                    <a href="#"><img class="footer__social-link" src="./images/facebook.svg" alt="фейсбук"></a>
+                    <a href="#"><img class="footer__social-link" src="./images/instagram.svg" alt="инстаграм"></a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+
+    

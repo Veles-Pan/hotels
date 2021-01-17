@@ -1,0 +1,246 @@
+.root {
+    animation: body-opacity-change 1s ease-in-out 0s 1 forwards;
+    opacity: 0;
+}
+
+.content {
+    display: grid;
+    grid-template-areas: 
+    "filters rooms";
+    gap: 0 60px;
+    margin: 0 100px;
+    justify-content: center;
+    align-items: start;
+}
+
+.filters {
+    grid-area: filters;
+    max-width: 266px;
+}
+
+.rooms {
+    grid-area: rooms;
+    max-width: 834px;
+    margin: auto
+}
+
+.rooms__title {
+    margin: 0;
+    font-size: 24px;
+    margin: 30px 0 20.5px;
+}
+
+.grid-area {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    "image image"
+    "number cost"
+    "line line"
+    "stars reviews";
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+    transition: opacity .3s ease-in;
+    overflow: hidden;
+    text-decoration: none;
+    color: #1F2041;
+}
+
+.card:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.card__image {
+    grid-area: image;
+    width: 270px;
+    height: 152px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 20px;
+}
+
+
+.card__number {
+    grid-area: number;
+    justify-self: start;
+    margin-left: 20px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.card__n {
+    font-size: 14px;
+}
+
+.card__cost {
+    grid-area: cost;
+    justify-self: end;
+    margin-right: 20px;
+    opacity: .5;
+    font-size: 12px;
+}
+
+.card__stars {
+    grid-area: stars;
+    margin-left: 20px;
+    font-size: 24px;
+    height: 24px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card__reviews {
+    grid-area: reviews;
+    justify-self: end;
+    margin-right: 20px;
+    align-self: end;
+    opacity: .5;
+    font-size: 12px;
+    margin-bottom: 19px;
+}
+
+.card__cost_bold {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card__line {
+    grid-area: line;
+    background-color: rgba(31, 32, 65, 0.1);
+    height: 1px;
+    width: 230px;
+    margin: 12px 20px 3px;
+}
+
+@keyframes body-opacity-change {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.filters__label {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.filters__filter:first-child {
+    margin-top: 36px;
+}
+
+.date {
+    margin-bottom: 20px;
+}
+
+.guests {
+    margin-bottom: 30px;
+}
+
+
+
+.filters__item {
+    border: 0;
+    width: 100%;
+    height: 24px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+    background-color: transparent;
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: inherit;
+    height: 44px;
+    padding-left: 15px;
+}
+
+.filters__item:focus {
+    outline-style: none;
+}
+
+.guests {
+    width: 266px;
+}
+
+.cost {
+    width: 266px;
+    height: 6px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.filters__text {
+    margin-top: 10.5px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 14px;
+    opacity: .5;
+}
+
+
+
+
+input[type="checkbox"] {
+    position: absolute;
+  z-index: -1;
+  opacity: 0;
+  }
+   
+  /* стили для метки */
+  .form__label {
+    display: inline-flex;
+  align-items: center;
+  user-select: none;
+  }
+   
+  /* формируем внешний вид чекбокса в псевдоэлементе before */
+  .form__label:before {
+    content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  }
+   
+  /* вариации внешнего вида в зав-ти от статуса checkbox */
+  /* checked */
+  .form__item_el_extra-options:checked+.form__label:before {
+    content: "x";
+  }
+  /* disabled */
+  .form__item_el_extra-options:disabled+.form__label:before {
+    background: #eee;
+    color: #aaa;
+  }

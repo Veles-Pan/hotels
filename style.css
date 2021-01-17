@@ -27,6 +27,7 @@ p {
     align-items: center;
     width: 80.5vw;
     margin: 15px auto;
+
 }
 
 .navigation {
@@ -82,7 +83,6 @@ p {
     background-size: cover;
     background-position: center;
     width: 100%;
-    max-width: 1440px;
     height: 57.6vw;
     max-height: 830px;
     margin: auto;
@@ -117,11 +117,18 @@ p {
     border-radius: 22px;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
+    justify-self: center;
     color: #FFFFFF;
     margin-bottom: 30px;
     font-size: 12px;
     font-weight: bold;
     position: relative;
+}
+
+.intro__search {
+    position: relative;
+    top: 15px;
 }
 
 .intro__arrow {
@@ -443,3 +450,5 @@ p {
 .footer__social-link:hover {
     opacity: .75;
 }
+
+
