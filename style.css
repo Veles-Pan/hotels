@@ -199,9 +199,12 @@ p {
 .datepicker {
     background-image: url('./images/expand_more.svg');
     background-position: calc(100% - .5rem), 100% 0;
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
 
+.datepicker:hover {
+    cursor: pointer;
+}
 
 .intro__label {
     font-size: 12px;
@@ -308,6 +311,10 @@ p {
     font-size: 12px;
     text-transform: uppercase;
     margin-top: 20px;
+}
+
+.calendar__button:hover {
+    cursor: pointer;
 }
 
 .calendar__button:first-child {
@@ -451,4 +458,148 @@ p {
     opacity: .75;
 }
 
+.guests__selector {
+    width: 297px;
+    height: 140px;
+    padding: 8px 7px 13px 14px;
+    background-color: #ffffff;
+    display: none;
+    grid-template-areas: 
+    "adult adult-counter"
+    "children children-counter"
+    "babies babies-counter"
+    "clean-button accept-button";
+    gap: 8px 0;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    z-index: 2;
+}
 
+
+.guests__title {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.guests__button {
+    font-weight: bold;
+    color: #BC9CFF;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 11px;
+}
+
+.guests__adult {
+    grid-area: adult;
+}
+
+.guests__adult-counter {
+    grid-area: adult-counter;
+    justify-self: end;
+}
+
+.guests__children {
+    grid-area: children;
+}
+
+.guests__children-counter {
+    grid-area: children-counter;
+    justify-self: end;
+}
+
+.guests__babies {
+    grid-area: babies;
+}
+
+.guests__babies-counter {
+    grid-area: babies-counter;
+    justify-self: end;
+}
+
+.guests__clean-button {
+    grid-area: clean-button;
+}
+
+.guests__accept-button {
+    grid-area: accept-button;
+    justify-self: end;
+}
+
+.guests__minus {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-sizing: border-box;
+    border-radius: 22px;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guests__minus:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+.guests__plus {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-sizing: border-box;
+    border-radius: 22px;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guests__plus:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+.guests__minus_disable {
+    opacity: .25;
+}
+
+.guests__minus_disable:hover {
+    opacity: .25;
+    cursor: default;
+}
+
+.guests__number {
+    font-weight: bold;
+    width: 15px;
+    margin: 0 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guests__counter {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.guest-number:focus+.guests__selector {
+    display: grid;
+    
+}
+
+.guest-number:focus {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 2px 2px 0 0;
+    border-bottom: none;
+}
+
+.guests__button:hover {
+    cursor: pointer;
+}

@@ -50,20 +50,14 @@
                 <article class="filters__filter">
                     <h3 for="rules" class="filters__label">Правила дома</h3>
 
-                    <label for="smoking" class="form__label form__label_direction_right">
-                        <input type="checkbox" name="extra-option" id="smoking" class="form__item form__item_el_extra-options" value="smoking">
-                        <span class="form__label-text">Можно курить</span>
-                    </label> 
-                                
-                    <label for="pet" class="form__label form__label_direction_right">
-                      <input type="checkbox" name="extra-option" id="pet" class="form__item form__item_el_extra-options" value="pet" checked>
-                      <span class="form__label-text">Можно с питомцем</span>
-                    </label> 
-
-                    <label for="invite" class="form__label form__label_direction_right">
-                        <input type="checkbox" name="extra-option" id="invite" class="form__item form__item_el_extra-options" value="invite" checked>
-                        <span class="form__label-text">Можно пригласить гостей (до 10 человек)</span>
-                      </label> 
+                    <input type="checkbox" class="custom-checkbox" id="smoking" name="smoking" value="yes">
+                    <label class="filters__about" for="smoking">Можно курить</label>
+        
+                    <input type="checkbox" class="custom-checkbox" id="pet" name="pet" value="yes">
+                    <label class="filters__about" for="pet">Можно с питомцем</label>
+        
+                    <input type="checkbox" class="custom-checkbox" id="invite" name="invite" value="yes">
+                    <label class="filters__about" for="invite">Можно пригласить гостей (до 10 человек)</label>
 
                 </article>
 
@@ -205,6 +199,8 @@
                 </article>
 
             </section>
+
+           
 
         </main>
 
