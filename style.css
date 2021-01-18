@@ -27,8 +27,10 @@ p {
     align-items: center;
     width: 80.5vw;
     margin: 15px auto;
+    position: relative;
 
 }
+
 
 .navigation {
     display: grid;
