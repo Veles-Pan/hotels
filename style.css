@@ -485,9 +485,9 @@ p {
     background-color: #ffffff;
     display: none;
     grid-template-areas: 
-    "adult adult-counter"
-    "children children-counter"
-    "babies babies-counter"
+    "first first-counter"
+    "second second-counter"
+    "third third-counter"
     "clean-button accept-button";
     gap: 8px 0;
     border: 1px solid rgba(31, 32, 65, 0.5);
@@ -514,30 +514,30 @@ p {
     margin-top: 11px;
 }
 
-.popup__adult {
-    grid-area: adult;
+.popup__first {
+    grid-area: first;
 }
 
-.popup__adult-counter {
-    grid-area: adult-counter;
+.popup__first-counter {
+    grid-area: first-counter;
     justify-self: end;
 }
 
-.popup__children {
-    grid-area: children;
+.popup__second {
+    grid-area: second;
 }
 
-.popup__children-counter {
-    grid-area: children-counter;
+.popup__second-counter {
+    grid-area: second-counter;
     justify-self: end;
 }
 
-.popup__babies {
-    grid-area: babies;
+.popup__third {
+    grid-area: third;
 }
 
-.popup__babies-counter {
-    grid-area: babies-counter;
+.popup__third-counter {
+    grid-area: third-counter;
     justify-self: end;
 }
 
