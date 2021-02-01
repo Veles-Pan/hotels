@@ -20,8 +20,9 @@
 
 .rooms {
     grid-area: rooms;
-    max-width: 834px;
-    margin: auto
+    width: 58vw;
+    max-width: 835px;
+    margin: auto;
 }
 
 .rooms__title {
@@ -33,14 +34,15 @@
 .grid-area {
     display: grid;
     position: relative;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 270px));
+    width: 100%;
     gap: 20px 12px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .card {
-    position: relative;
+
     display: grid;
     grid-template-areas: 
     "image image"
@@ -53,7 +55,6 @@
     overflow: hidden;
     text-decoration: none;
     color: #1F2041;
-    max-width: 257px;
 }
 
 .card:hover {
@@ -63,8 +64,7 @@
 
 .card__image {
     grid-area: image;
-    width: 270px;
-    height: 152px;
+    width: 100%;
     object-fit: cover;
     border-radius: 4px 4px 0 0;
     margin-bottom: 20px;
@@ -161,7 +161,6 @@
 }
 
 
-
 .filters__item {
     border: 0;
     width: 100%;
@@ -201,6 +200,10 @@
     font-size: 12px;
     line-height: 14px;
     opacity: .5;
+}
+
+.filters__text_checkbox {
+    margin: 5px 0 10px 30px;
 }
 
 
@@ -256,10 +259,29 @@
   
   .filters__about {
       font-size: 14px;
-      line-height: 18px;
+      line-height: 1.28;
       opacity: .5;
   }
 
 .filters__about:last-child {
     margin-bottom: 30px;
+}
+
+.filters__about_bold {
+    opacity: .75;
+    font-weight: bold;
+}
+
+.facilities:focus+.filters__selector {
+    display: grid;
+}
+
+.facilities:focus {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 2px 2px 0 0;
+    border-bottom: none;
+}
+
+.filters__selector {
+    width: 243px;
 }

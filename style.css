@@ -358,6 +358,24 @@ p {
     align-items: flex-start;
 }
 
+@media screen and (max-width: 1050px) {
+    .footer__navigation {
+        display: none;
+    }
+
+    .footer__list {
+        display: none;
+    }
+
+    .footer__list:last-child {
+        display: block;
+    }
+
+    .header {
+        width: 96%;
+    }
+}
+
 .footer__bar {
     display: flex;
     margin: 26px 9.72%;
@@ -460,7 +478,7 @@ p {
     opacity: .75;
 }
 
-.guests__selector {
+.popup__selector {
     width: 297px;
     height: 140px;
     padding: 8px 7px 13px 14px;
@@ -480,7 +498,7 @@ p {
 }
 
 
-.guests__title {
+.popup__title {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: bold;
@@ -488,7 +506,7 @@ p {
     align-items: center;
 }
 
-.guests__button {
+.popup__button {
     font-weight: bold;
     color: #BC9CFF;
     font-size: 12px;
@@ -496,43 +514,43 @@ p {
     margin-top: 11px;
 }
 
-.guests__adult {
+.popup__adult {
     grid-area: adult;
 }
 
-.guests__adult-counter {
+.popup__adult-counter {
     grid-area: adult-counter;
     justify-self: end;
 }
 
-.guests__children {
+.popup__children {
     grid-area: children;
 }
 
-.guests__children-counter {
+.popup__children-counter {
     grid-area: children-counter;
     justify-self: end;
 }
 
-.guests__babies {
+.popup__babies {
     grid-area: babies;
 }
 
-.guests__babies-counter {
+.popup__babies-counter {
     grid-area: babies-counter;
     justify-self: end;
 }
 
-.guests__clean-button {
+.popup__clean-button {
     grid-area: clean-button;
 }
 
-.guests__accept-button {
+.popup__accept-button {
     grid-area: accept-button;
     justify-self: end;
 }
 
-.guests__minus {
+.popup__minus {
     width: 30px;
     height: 30px;
     border: 1px solid rgba(31, 32, 65, 0.5);
@@ -544,12 +562,12 @@ p {
     align-items: center;
 }
 
-.guests__minus:hover {
+.popup__minus:hover {
     cursor: pointer;
     opacity: .75;
 }
 
-.guests__plus {
+.popup__plus {
     width: 30px;
     height: 30px;
     border: 1px solid rgba(31, 32, 65, 0.5);
@@ -561,21 +579,21 @@ p {
     align-items: center;
 }
 
-.guests__plus:hover {
+.popup__plus:hover {
     cursor: pointer;
     opacity: .75;
 }
 
-.guests__minus_disable {
+.popup__minus_disable {
     opacity: .25;
 }
 
-.guests__minus_disable:hover {
+.popup__minus_disable:hover {
     opacity: .25;
     cursor: default;
 }
 
-.guests__number {
+.popup__number {
     font-weight: bold;
     width: 15px;
     margin: 0 16px 0;
@@ -584,7 +602,7 @@ p {
     align-items: center;
 }
 
-.guests__counter {
+.popup__counter {
     display: flex;
     height: 30px;
     justify-content: center;

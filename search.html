@@ -57,17 +57,39 @@
                     <label class="filters__about" for="pet">Можно с питомцем</label>
         
                     <input type="checkbox" class="custom-checkbox" id="invite" name="invite" value="yes">
-                    <label class="filters__about" for="invite">Можно пригласить гостей (до 10 человек)</label>
+                    <label class="filters__about" for="invite">Можно пригласить гостей</label>
 
                 </article>
 
                 <article class="filters__filter">
-                    <label for="accesibility" class="filters__label">Доступность</label>
+                    <h3 class="filters__label">Доступность</h3>
+
+                    <input type="checkbox" class="custom-checkbox" id="corridor" name="corridor" value="yes">
+                    <label class="filters__about filters__about_bold" for="corridor">Широкий коридор</label>
+                    <p class="filters__text filters__text_checkbox">Ширина коридоров в номере не менее 91 см.</p>
+        
+                    <input type="checkbox" class="custom-checkbox" id="help" name="help" value="yes">
+                    <label class="filters__about filters__about_bold" for="help">Помощник для инвалидов</label>
+                    <p class="filters__text filters__text_checkbox">На 1 этаже вас встретит специалист  и проводит до номера.</p>
 
                 </article>
 
                 <article class="filters__filter">
                     <label for="facilities" class="filters__label">Удобства номера</label>
+
+                        <input type="text" class="facilities filters__item" id="facilities" name="facilities" placeholder="2 спальни, 2 кровати">
+
+                    <div class="popup__selector filters__selector">
+                        <p class="popup__title popup__adult">Спальни</p>
+                        <div class="popup__counter popup__adult-counter"><span class="popup__minus">-</span><span class="popup__number">2</span><span class="popup__plus">+</span></div>
+
+                        <p class="popup__title popup__children">Кровати</p>
+                        <div class="popup__counter popup__children-counter"><span class="popup__minus">-</span><span class="popup__number">2</span><span class="popup__plus">+</span></div>
+
+                        <p class="popup__title popup__babies">Ванные комнаты</p>
+                        <div class="popup__counter popup__babies-counter"><span class="popup__minus popup__minus_disable">-</span><span class="popup__number">0</span><span class="popup__plus">+</span></div>
+
+                    </div>
 
                 </article>
 
