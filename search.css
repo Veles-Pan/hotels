@@ -25,6 +25,22 @@
     margin: auto;
 }
 
+@media screen and (max-width: 1437px) {
+    .rooms {
+        max-width: 552px;
+    }
+}
+
+@media screen and (max-width: 951px) {
+    .rooms {
+        max-width: 280px;
+    }
+
+    .rooms__title {
+        text-align: center;
+    }
+}
+
 .rooms__title {
     margin: 0;
     font-size: 24px;
@@ -35,11 +51,13 @@
     display: grid;
     position: relative;
     grid-template-columns: repeat(auto-fit, minmax(270px, 270px));
-    width: 100%;
+    width: auto;
     gap: 20px 12px;
     justify-content: flex-start;
     align-items: center;
 }
+
+
 
 .card {
 
