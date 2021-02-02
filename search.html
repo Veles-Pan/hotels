@@ -12,6 +12,7 @@
         
         <header class="header">
             <img class="header__logo" alt="" src="./images/Logo.svg">
+            <div class="menu">
             <nav class="navigation">
                 <a class="navigation__element" href="#" target="_self">О нас</a>
                 <a class="navigation__element" href="#" target="_self">Услуги</a>
@@ -23,6 +24,8 @@
                 <button class="header__login">Войти</button>
                 <button class="header__registration">Зарегистрироваться</button>
             </div>
+        </div>
+            <button class="header__popup-menu">Меню</button>
         </header>
 
         <main class="content">
@@ -51,7 +54,7 @@
                     <h3 for="rules" class="filters__label">Правила дома</h3>
 
                     <input type="checkbox" class="custom-checkbox" id="smoking" name="smoking" value="yes">
-                    <label class="filters__about" for="smoking">Можно курить</label>
+                    <label class="filters__about filters__about_content_smoking" for="smoking">Можно курить</label>
         
                     <input type="checkbox" class="custom-checkbox" id="pet" name="pet" value="yes">
                     <label class="filters__about" for="pet">Можно с питомцем</label>
@@ -65,7 +68,7 @@
                     <h3 class="filters__label">Доступность</h3>
 
                     <input type="checkbox" class="custom-checkbox" id="corridor" name="corridor" value="yes">
-                    <label class="filters__about filters__about_bold" for="corridor">Широкий коридор</label>
+                    <label class="filters__about filters__about_bold filters__about_content_corridor" for="corridor">Широкий коридор</label>
                     <p class="filters__text filters__text_checkbox">Ширина коридоров в номере не менее 91 см.</p>
         
                     <input type="checkbox" class="custom-checkbox" id="help" name="help" value="yes">
@@ -254,13 +257,14 @@
                     <li class="footer__element"><a class="footer__link" href="#">Сообщества</a></li>
                     <li class="footer__element"><a class="footer__link" href="#">Связь с нами</a></li>
                 </ul>
-                <ul class="footer__list">
+                <ul class="footer__list footer__list_subscribe">
                     <li class="footer__element"><h3 class="footer__subtitle">Подписка</h3></li>
                     <li class="footer__element"><p class="footer__text">Получайте специальные предложения и новости сервиса</p></li>
                     <li class="footer__element"><input class="footer__email" type="email" placeholder="Email"></li>
                 </ul>
             </div>
             <div class="footer__bar">
+                <img class="footer__logo footer__logo_bar" src="./images/Logo.svg" alt="лого">
                 <p class="footer__copyright">Copyright &copy;&nbsp;2018 Toxin отель. Все права зачищены.</p>
                 <div class="footer__social">
                     <a href="#"><img class="footer__social-link" src="./images/twitter.svg" alt="твиттер"></a>

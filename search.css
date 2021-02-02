@@ -202,6 +202,10 @@
     opacity: .5;
 }
 
+.filters__text:last-child {
+    margin-bottom: 30px;
+}
+
 .filters__text_checkbox {
     margin: 5px 0 10px 30px;
 }
@@ -264,6 +268,10 @@
     border-color: #BC9CFF;
 }
 
+.facilities {
+    margin-top: 16px;
+}
+
 .facilities:focus+.filters__selector {
     display: grid;
 }
@@ -280,4 +288,12 @@
     "second second-counter"
     "third third-counter";
     width: 243px;
+}
+
+.filters__about_content_smoking {
+    margin-top: 16px;
+}
+
+.filters__about_content_corridor {
+    margin-top: 16px;
 }
