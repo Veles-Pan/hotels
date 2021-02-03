@@ -4,16 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Search room</title>
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="search.css">
+        <link rel="stylesheet" href="./pages/search.css">
     </head>
 
-    <body class="root">
+    <body class="root opacity-change">
         
         <header class="header">
-            <div class="header__men">
+            <div class="header__menu">
             <img class="header__logo" alt="" src="./images/Logo.svg">
-            <div class="menu">
+            <div class="header__popup-menu">
             <nav class="navigation">
                 <a class="navigation__element" href="#" target="_self">О&nbsp;нас</a>
                 <a class="navigation__element" href="#" target="_self">Услуги</a>
@@ -26,28 +25,28 @@
                 <a class="header__registration">Зарегистрироваться</a>
             </div>
         </div>
-            <button class="header__popup-menu">Меню</button>
+            <button class="header__popup-button">Меню</button>
         </div>
         </header>
 
-        <main class="content">
+        <main class="content content_search">
 
             <section class="filters">
 
                 <article class="filters__filter">
                     <label for="date" class="filters__label">Даты пребывания в отеле</label>
-                    <input class= "date filters__item" type="text" id="date" name="date" placeholder="19 авг - 23 авг">
+                    <input class= "filters__date filters__item" type="text" id="date" name="date" placeholder="19 авг - 23 авг">
                 </article>
 
                 <article class="filters__filter">
-                    <label for="filter__guests" class="filters__label">Гости</label>
-                    <input class= "filter__guests filters__item" type="text" id="filter__guests" name="filter__guests" placeholder="3 взрослых">
+                    <label for="filters__guests" class="filters__label">Гости</label>
+                    <input class= "filters__guests filters__item" type="text" id="filters__guests" name="filters__guests" placeholder="3 взрослых">
 
                 </article>
 
                 <article class="filters__filter">
                     <h3 class="filters__label">Диапазон цены</h3>
-                    <div class= "filters__item cost" id="cost" name="cost"></div>
+                    <div class= "filters__item filters__cost" id="cost" name="cost"></div>
                     <p class="filters__text">Стоимость за сутки пребывания в номере</p>
 
                 </article>
@@ -82,7 +81,7 @@
                 <article class="filters__filter">
                     <label for="facilities" class="filters__label">Удобства номера</label>
 
-                        <input type="text" class="facilities filters__item" id="facilities" name="facilities" placeholder="2 спальни, 2 кровати">
+                        <input type="text" class="filters__facilities filters__item" id="facilities" name="facilities" placeholder="2 спальни, 2 кровати">
 
                     <div class="popup__selector filters__selector">
                         <p class="popup__title popup__firs">Спальни</p>
@@ -223,8 +222,8 @@
 
             </section>
 
-            <div class="show-filters">
-                <button class="show-filters__button">Фильтры</button>
+            <div>
+                <button class="filters__show-button">Фильтры</button>
             </div>
 
            
@@ -276,7 +275,7 @@
             </div>
         </footer>
 
-        <script src="./script.js"></script>
+        <script src="./js/script.js"></script>
 
     </body>
 

@@ -1,0 +1,8 @@
+.popup__number {
+    font-weight: bold;
+    width: 15px;
+    margin: 0 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

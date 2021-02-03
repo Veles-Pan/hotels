@@ -1,0 +1,4 @@
+.popup__third-counter {
+    grid-area: third-counter;
+    justify-self: end;
+}

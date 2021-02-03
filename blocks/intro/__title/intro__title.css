@@ -1,0 +1,15 @@
+.intro__title {
+    grid-area: title;
+    font-size: 24px;
+    width: 320px;
+    margin: 40px auto 21px;
+}
+
+@media screen and (max-width: 378px) {
+    .intro__title {
+        text-align: center;
+        font-size: 20px;
+        width: auto;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,9 @@
+.card__reviews {
+    grid-area: reviews;
+    justify-self: end;
+    margin-right: 20px;
+    align-self: end;
+    opacity: .5;
+    font-size: 12px;
+    margin-bottom: 19px;
+}

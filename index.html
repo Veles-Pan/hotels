@@ -4,15 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TOXIN</title>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./pages/index.css">
     </head>
 
     <body class="root">
 
         <header class="header">
-            <div class="header__men">
+            <div class="header__menu">
             <img class="header__logo" alt="" src="./images/Logo.svg">
-            <div class="menu">
+            <div class="header__popup-menu">
             <nav class="navigation">
                 <a class="navigation__element" href="#" target="_self">О&nbsp;нас</a>
                 <a class="navigation__element" href="#" target="_self">Услуги</a>
@@ -25,7 +25,7 @@
                 <a class="header__registration">Зарегистрироваться</a>
             </div>
         </div>
-            <button class="header__popup-menu">Меню</button>
+            <button class="header__popup-button">Меню</button>
         </div>
         </header>
 
@@ -33,9 +33,9 @@
             <section class="intro">
                 <div class="intro__card">
                     <h2 class="intro__title">Найдем номера под ваши пожелания</h2>
-                    <div class="intro__pol arrival">
+                    <div class="intro__pol intro__arrival">
                         <label for="arrival-date" class="intro__label">Прибытие</label>
-                        <input type="text" class="datepicker intro__item intro__item_el_arrivaldate" id="arrival-date" name="arrival-date" placeholder="19.08.2019">
+                        <input type="text" class="intro__datepicker intro__item intro__item_el_arrivaldate" id="arrival-date" name="arrival-date" placeholder="19.08.2019">
                         
                         <div class="calendar">
 
@@ -106,17 +106,17 @@
                         </div>
                     </div>
                     
-                    <div class="intro__pol departure">
+                    <div class="intro__pol intro__departure">
                         <label for="departure-date" class="intro__label">Выезд</label>
-                        <input class= "datepicker intro__item intro__item_el_departuredate" type="text" id="departure-date" name="departure-date" placeholder="23.08.2019">
+                        <input class= "intro__datepicker intro__item intro__item_el_departuredate" type="text" id="departure-date" name="departure-date" placeholder="23.08.2019">
                     </div>
                     
-                    <div class="guests">
+                    <div class="intro__guests">
 
-                        <label for="guest-number" class="intro__label">Гости</label>
-                        <input type="text" class="guest-number intro__item datepicker" id="guest-number" name="guest-number" placeholder="3 гостя">
+                        <label for="intro__guest-number" class="intro__label">Гости</label>
+                        <input type="text" class="intro__guest-number intro__item intro__datepicker" id="guest-number" name="guest-number" placeholder="3 гостя">
 
-                        <div class="popup__selector guests__selector">
+                        <div class="popup__selector">
                             <p class="popup__title popup__first">Взрослые</p>
                             <div class="popup__counter popup__first-counter"><span class="popup__minus">-</span><span class="popup__number">2</span><span class="popup__plus">+</span></div>
 
@@ -190,12 +190,10 @@
             </div>
         </footer>
 
-        <div class="popup-menu">
-
-        </div>
 
 
-        <script src="./script.js"></script>
+
+        <script src="./js/script.js"></script>
     </body>
 </html>
     

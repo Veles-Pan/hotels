@@ -1,0 +1,24 @@
+.content_search {
+    display: grid;
+    grid-template-areas: 
+    "filters rooms";
+    gap: 0 60px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: start;
+}
+
+@media screen and (max-width: 650px) {
+    .content_search {
+        gap: 0 40px;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .content_search {
+        grid-template-areas: 
+        "filters"
+        "rooms";
+        min-width: 270px;
+    }
+}

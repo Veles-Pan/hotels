@@ -1,0 +1,14 @@
+.calendar__day {
+    opacity: .5;
+    vertical-align: middle;
+    z-index: 2;
+}
+
+.calendar__day:hover {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 22px;
+    color: #FFFFFF;
+    font-weight: bold;
+    opacity: 1;
+    cursor: pointer;
+}

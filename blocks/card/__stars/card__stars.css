@@ -1,0 +1,14 @@
+.card__stars {
+    grid-area: stars;
+    margin-left: 20px;
+    font-size: 24px;
+    height: 24px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}

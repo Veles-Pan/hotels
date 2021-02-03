@@ -1,0 +1,19 @@
+.filters__selector {
+    grid-template-areas: 
+    "first first-counter"
+    "second second-counter"
+    "third third-counter";
+    width: 243px;
+}
+
+.filters__item:focus+.filters__selector {
+    display: grid;
+}
+
+@media screen and (max-width: 378px) {
+    .filters__selector {
+        width: 228px;
+        bottom: -140px;
+    }
+
+}

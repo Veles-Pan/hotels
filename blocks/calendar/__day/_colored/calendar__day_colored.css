@@ -1,0 +1,17 @@
+.calendar__day_colored {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.25;
+    height: 40px;
+    width: 160px;
+    position: absolute;
+    left: 22px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 378px) {
+    .calendar__day_colored {
+        height: 30px;
+        width: 130px;
+        left: 18px;
+    }
+}

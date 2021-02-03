@@ -1,0 +1,26 @@
+.popup__selector {
+    width: 297px;
+    height: 140px;
+    padding: 8px 7px 13px 14px;
+    background-color: #ffffff;
+    display: none;
+    grid-template-areas: 
+    "first first-counter"
+    "second second-counter"
+    "third third-counter"
+    "clean-button accept-button";
+    gap: 8px 0;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    z-index: 2;
+}
+
+@media screen and (max-width: 378px) {
+    .popup__selector {
+        width:  228px;
+        padding: 10px;
+        gap: 3px 0;
+    }
+}

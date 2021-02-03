@@ -1,0 +1,9 @@
+.opacity-change {
+    animation: body-opacity-change 1s ease-in-out 0s 1 forwards;
+    opacity: 0;
+}
+
+@keyframes body-opacity-change {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}

@@ -1,0 +1,24 @@
+.rooms {
+    grid-area: rooms;
+    width: 58vw;
+    max-width: 835px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1437px) {
+    .rooms {
+        max-width: 552px;
+    }
+}
+
+@media screen and (max-width: 951px) {
+    .rooms {
+        max-width: 280px;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .rooms {
+        width: auto;
+    }
+}

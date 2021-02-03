@@ -1,0 +1,7 @@
+.card__number {
+    grid-area: number;
+    justify-self: start;
+    margin-left: 20px;
+    font-size: 19px;
+    font-weight: bold;
+}

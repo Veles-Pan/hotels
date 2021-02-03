@@ -1,0 +1,4 @@
+.popup__first-counter {
+    grid-area: first-counter;
+    justify-self: end;
+}

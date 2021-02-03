@@ -1,0 +1,21 @@
+.calendar__button {
+    font-weight: bold;
+    color: #BC9CFF;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.calendar__button:hover {
+    cursor: pointer;
+}
+
+.calendar__button:first-child {
+    margin-right: 124px;
+}
+
+@media screen and (max-width: 378px) {
+    .calendar__button:first-child {
+        margin-right: 50px;
+    }
+}

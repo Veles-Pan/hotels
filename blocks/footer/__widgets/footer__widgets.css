@@ -1,0 +1,13 @@
+.footer__widgets {
+    display: flex;
+    margin: 100px 9.72%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1050px) {
+    .footer__widgets {
+        display: none;
+    }
+}

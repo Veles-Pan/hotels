@@ -1,0 +1,14 @@
+.filters__about {
+    position: relative;
+    font-size: 14px;
+    line-height: 1.28;
+    opacity: .5;
+}
+
+.filters__about:last-child {
+    margin-bottom: 30px;
+}
+
+.filters__about::before {
+    margin-bottom: 3px;
+}

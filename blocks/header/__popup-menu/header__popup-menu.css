@@ -1,0 +1,36 @@
+.header__popup-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .header__popup-menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        z-index: 2;
+        top: 55px;
+        padding: 0 15px 15px;
+        background-color: #ffffff;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-top: none;
+        box-sizing: border-box;
+        border-radius: 0 0 4px 4px;
+    }   
+}
+
+@media screen and (max-width: 500px) {
+    .header__popup-menu {
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .header__popup-menu {
+        top: 53px;
+    }
+}

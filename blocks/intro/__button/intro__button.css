@@ -1,0 +1,24 @@
+.intro__button {
+    grid-area: button;
+    width: 320px;
+    height: 44px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-style: none;
+    border-radius: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    justify-self: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+}
+
+@media screen and (max-width: 378px) {
+    .intro__button {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}

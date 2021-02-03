@@ -1,0 +1,9 @@
+.footer__logo-bar {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .footer__logo-bar {
+        display: block;
+    }
+}

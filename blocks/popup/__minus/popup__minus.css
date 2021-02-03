@@ -1,0 +1,16 @@
+.popup__minus {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-sizing: border-box;
+    border-radius: 22px;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup__minus:hover {
+    cursor: pointer;
+    opacity: .75;
+}

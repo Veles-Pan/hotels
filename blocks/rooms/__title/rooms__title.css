@@ -1,0 +1,19 @@
+.rooms__title {
+    margin: 0;
+    font-size: 24px;
+    margin: 30px 0 20.5px;
+}
+
+@media screen and (max-width: 951px) {
+    .rooms__title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .rooms__title {
+        text-align: center;
+        font-size: 20px;
+        width: 270px;
+    }
+}

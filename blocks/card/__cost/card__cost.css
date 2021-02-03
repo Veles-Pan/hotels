@@ -1,0 +1,7 @@
+.card__cost {
+    grid-area: cost;
+    justify-self: end;
+    margin-right: 20px;
+    opacity: .5;
+    font-size: 12px;
+}

@@ -1,0 +1,8 @@
+.filters__label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    width: 266px;
+}

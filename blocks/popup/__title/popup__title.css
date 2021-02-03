@@ -1,0 +1,7 @@
+.popup__title {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}

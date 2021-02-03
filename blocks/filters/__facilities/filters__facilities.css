@@ -1,0 +1,16 @@
+.filters__facilities {
+    margin-top: 16px;
+}
+
+.filters__facilities:focus {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 2px 2px 0 0;
+    border-bottom: none;
+}
+
+
+@media screen and (max-width: 476px) {
+    .filters__facilities {
+        margin-bottom: 20px;
+    }
+}

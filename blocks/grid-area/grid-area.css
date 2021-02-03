@@ -1,0 +1,9 @@
+.grid-area {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 270px));
+    width: auto;
+    gap: 20px 12px;
+    justify-content: flex-start;
+    align-items: center;
+}

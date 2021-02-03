@@ -1,0 +1,8 @@
+.popup__minus_disable {
+    opacity: .25;
+}
+
+.popup__minus_disable:hover {
+    opacity: .25;
+    cursor: default;
+}

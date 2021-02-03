@@ -1,0 +1,4 @@
+.popup__accept-button {
+    grid-area: accept-button;
+    justify-self: end;
+}

@@ -1,0 +1,13 @@
+.filters__filter:first-child {
+    margin-top: 36px;
+}
+
+@media screen and (max-width: 476px) {
+    .filters__filter {
+        margin: 0 10px;
+    }
+
+    .filters__filter:first-child {
+        margin-top: 20px;
+    }
+}

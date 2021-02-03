@@ -1,0 +1,19 @@
+.card {
+    display: grid;
+    grid-template-areas: 
+    "image image"
+    "number cost"
+    "line line"
+    "stars reviews";
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+    transition: opacity .3s ease-in;
+    overflow: hidden;
+    text-decoration: none;
+    color: #1F2041;
+}
+
+.card:hover {
+    opacity: .5;
+    cursor: pointer;
+}

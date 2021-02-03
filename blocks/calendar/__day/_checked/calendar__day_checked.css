@@ -1,0 +1,7 @@
+.calendar__day_checked {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    color: #FFFFFF;
+    font-weight: bold;
+    opacity: 1;
+}

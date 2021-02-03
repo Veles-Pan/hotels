@@ -1,0 +1,12 @@
+.filters__text {
+    margin-top: 10.5px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    opacity: .5;
+}
+
+.filters__text:last-child {
+    margin-bottom: 30px;
+}

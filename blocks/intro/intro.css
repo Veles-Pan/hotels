@@ -1,0 +1,20 @@
+.intro {
+    position: relative;
+    background-image: url(../../images/intro.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 57.6vw;
+    max-height: 830px;
+    min-height: 500px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1050px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
