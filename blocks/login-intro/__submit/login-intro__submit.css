@@ -1,13 +1,14 @@
 .login-intro__submit {
-    padding: 7px 18px;
-    background-color: #ffffff;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-style: none;
     border-radius: 22px;
-    border: 2px solid #BC9CFF;
-    text-transform: uppercase;
+    font-weight: bold;
     font-size: 12px;
     line-height: 1.25;
-    color: #BC9CFF;
-    outline: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    outline-style: none;
+    padding: 10px 20px;
     text-decoration: none;
     margin-top: 20px;
 }
