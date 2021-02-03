@@ -32,25 +32,6 @@
 
 @import url('../blocks/custom-radio/custom-radio.css');
 
-@import url('../blocks/popup/popup.css');
-@import url('../blocks/popup/__selector/popup__selector.css');
-@import url('../blocks/popup/__accept-button/popup__accept-button.css');
-@import url('../blocks/popup/__button/popup__button.css');
-@import url('../blocks/popup/__clean-button/popup__clean-button.css');
-@import url('../blocks/popup/__counter/popup__counter.css');
-@import url('../blocks/popup/__first-counter/popup__first-counter.css');
-@import url('../blocks/popup/__first/popup__first.css');
-@import url('../blocks/popup/__minus/popup__minus.css');
-@import url('../blocks/popup/__minus/_disable/popup__minus_disable.css');
-@import url('../blocks/popup/__number/popup__number.css');
-@import url('../blocks/popup/__plus/popup__plus.css');
-@import url('../blocks/popup/__second-counter/popup__second-counter.css');
-@import url('../blocks/popup/__second/popup__second.css');
-@import url('../blocks/popup/__selector/_active/popup__selector_active.css');
-@import url('../blocks/popup/__third-counter/popup__third-counter.css');
-@import url('../blocks/popup/__third/popup__third.css');
-@import url('../blocks/popup/__title/popup__title.css');
-
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/__about/footer__about.css');
 @import url('../blocks/footer/__bar/footer__bar.css');
@@ -60,6 +41,7 @@
 @import url('../blocks/footer/__link/footer__link.css');
 @import url('../blocks/footer/__list/footer__list.css');
 @import url('../blocks/footer/__logo/footer__logo.css');
+@import url('../blocks/footer/__logo/_bar/footer__logo_bar.css');
 @import url('../blocks/footer/__social-link/footer__social-link.css');
 @import url('../blocks/footer/__social/footer__social.css');
 @import url('../blocks/footer/__subtitle/footer__subtitle.css');

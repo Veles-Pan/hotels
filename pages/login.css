@@ -36,6 +36,7 @@
 @import url('../blocks/footer/__link/footer__link.css');
 @import url('../blocks/footer/__list/footer__list.css');
 @import url('../blocks/footer/__logo/footer__logo.css');
+@import url('../blocks/footer/__logo/_bar/footer__logo_bar.css');
 @import url('../blocks/footer/__social-link/footer__social-link.css');
 @import url('../blocks/footer/__social/footer__social.css');
 @import url('../blocks/footer/__subtitle/footer__subtitle.css');
