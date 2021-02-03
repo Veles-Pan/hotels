@@ -74,7 +74,6 @@ p {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 15px;
-    font-weight: bold;
     color: #BC9CFF;
     margin-right: 20px;
 }
@@ -97,7 +96,6 @@ p {
     color: #BC9CFF;
     display: none;
     outline-style: none;
-    z-index: 4;
 }
 
 .header__popup-menu:hover {
@@ -321,6 +319,7 @@ p {
 .calendar__year {
       font-size: 19px;
       font-weight: bold;
+      text-align: center;
 }
 
 .calendar__arrow {
@@ -716,8 +715,6 @@ p {
         padding: 19px;
     }
 
-  
-
 
 }
 
@@ -731,11 +728,11 @@ p {
 
     .header__popup-menu {
         display: block;
-        margin-right: 75px;
+        margin-right: 71px;
     }
 
     .header__logo {
-        margin-left: 75px;
+        margin-left: 71px;
     }
 
     
@@ -746,9 +743,9 @@ p {
         flex-direction: column;
         align-items: center;
         right: 0;
-        top: 0;
         z-index: 2;
-        padding: 70px 20px 20px;
+        top: 70px;
+        padding: 0 15px 15px;
         background-color: #ffffff;
         border: 1px solid rgba(31, 32, 65, 0.25);
         border-top: none;
@@ -794,9 +791,14 @@ p {
         margin-left: 15px;
     }
 
+    .header {
+        z-index: 2;
+    }
+
     .menu {
         align-items: flex-end;
-        padding: 60px 15px 15px;
+        
+        z-index: -1;
     }
 
     .header__buttons {
@@ -809,11 +811,16 @@ p {
     opacity: .5;
     border: none;
     padding: 0;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: normal;
 
     }
 
     .header__buttons {
         margin-top: 10px;
+        border-top: 1px solid  rgba(31, 32, 65, .25);
+        padding-top: 10px;
     }
 
     .header__registration {
@@ -824,6 +831,9 @@ p {
     padding: 0;
     background: transparent;
     margin-top: 10px;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: normal;
     }
 
     .navigation {
@@ -844,5 +854,61 @@ p {
 @media screen and (max-width: 378px) {
     .header__logo {
         width: 100px;
+    }
+
+    .intro__card {
+        gap: 11px 10px;
+        grid-template-columns: 120px 120px;
+        width: auto;
+    }
+
+    .intro__button {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .intro__title {
+        text-align: center;
+        font-size: 20px;
+        width: auto;
+        margin-top: 30px;
+    }
+
+    .calendar {
+        max-width: 252px;
+        padding: 10px;
+        top: 44%;
+    }
+
+    .calendar__year {
+        font-size: 16px;
+    }
+
+    .calendar__row:first-child {
+        margin-bottom: 20px;
+    }
+
+    .calendar__cell {
+        width: 30px;
+        height: 30px;
+  }
+
+  
+    .calendar__day_colored {
+        height: 30px;
+        width: 130px;
+        left: 18px;
+    }
+
+    .calendar__button:first-child {
+        margin-right: 50px;
+    }
+
+    .popup__selector {
+        width:  228px;
+        padding: 10px;
+
+        gap: 3px 0;
+
     }
 }
