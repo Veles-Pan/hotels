@@ -337,7 +337,7 @@
 @media screen and (max-width: 650px) {
     .filters {
         display: none;
-        position: fixed;
+        position: absolute;
         left: 0px;
         top: 150px;
         background-color: #ffffff;

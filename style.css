@@ -23,10 +23,6 @@ p {
     align-items: center;
 }
 
-.root_no-scroll {
-    overflow: hidden;
-}
-
 .header {
     display: flex;
     flex-direction: row;
@@ -739,12 +735,12 @@ p {
 
     .menu {
         display: none;
-        position: fixed;
+        position: absolute;
         flex-direction: column;
         align-items: center;
         right: 0;
         z-index: 2;
-        top: 70px;
+        top: 55px;
         padding: 0 15px 15px;
         background-color: #ffffff;
         border: 1px solid rgba(31, 32, 65, 0.25);
@@ -797,8 +793,6 @@ p {
 
     .menu {
         align-items: flex-end;
-        
-        z-index: -1;
     }
 
     .header__buttons {
@@ -913,6 +907,6 @@ p {
     }
 
     .menu {
-        top: 68px;
+        top: 53px;
     }
 }
