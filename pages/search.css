@@ -76,6 +76,13 @@
 @import url('../blocks/filters/__text/_checkbox/filters__text_checkbox.css');
 @import url('../blocks/filters/_active/filters_active.css');
 @import url('../blocks/filters/__cost/filters__cost.css');
+@import url('../blocks/filters/__price/filters__price.css');
+
+@import url('../blocks/filters/__cost-gap-start/filters__cost-gap-start.css');
+@import url('../blocks/filters/__cost-gap-line/filters__cost-gap-line.css');
+@import url('../blocks/filters/__cost-gap-finish/filters__cost-gap-finish.css');
+@import url('../blocks/filters/__cost-gap/filters__cost-gap.css');
+
 
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/__about/footer__about.css');

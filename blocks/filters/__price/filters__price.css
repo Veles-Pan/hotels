@@ -1,0 +1,14 @@
+.filters__price {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    opacity: .5;position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+@media screen and (max-width: 650px) {
+    .filters__price {
+        top: 0;
+    }
+}

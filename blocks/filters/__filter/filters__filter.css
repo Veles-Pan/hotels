@@ -1,3 +1,7 @@
+.filters__filter {
+    position: relative;
+}
+
 .filters__filter:first-child {
     margin-top: 36px;
 }
