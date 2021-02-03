@@ -1,0 +1,5 @@
+.registration-intro__item_birthday {
+    background-image: url('../../../../images/expand_more.svg');
+    background-position: calc(100% - .5rem), 100% 0;
+    background-repeat: no-repeat;
+}

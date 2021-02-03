@@ -29,6 +29,7 @@
 @import url('../blocks/registration-intro/__submit/registration-intro__submit.css');
 @import url('../blocks/registration-intro/__text/registration-intro__text.css');
 @import url('../blocks/registration-intro/__title/registration-intro__title.css');
+@import url('../blocks/registration-intro/__item/_birthday/registration-intro__item_birthday.css');
 
 @import url('../blocks/custom-radio/custom-radio.css');
 
