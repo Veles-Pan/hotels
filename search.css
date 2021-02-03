@@ -200,11 +200,11 @@
 }
 
 .guests {
-    width: 266px;
+    max-width: 266px;
 }
 
 .cost {
-    width: 266px;
+    max-width: 266px;
     height: 6px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
@@ -351,10 +351,70 @@
     }
 
     .show-filters__button {
+        grid-area: filters;
         display: block;
     }
 
     .content {
         gap: 0 40px;
     }
+}
+
+@media screen and (max-width: 476px) {
+    .show-filters__button {
+        position: relative;
+        top: 0;
+        margin: 20px auto 0;
+        width: 200px;
+    }
+
+    .content {
+        grid-template-areas: 
+    "filters"
+    "rooms";
+    min-width: 270px;
+    }
+
+
+    .rooms {
+        width: auto;
+    }
+
+    .rooms__title {
+        text-align: center;
+        font-size: 20px;
+        width: 270px;
+    }
+
+    .filters {
+        width: auto;
+        min-width: 270px;
+        padding: 0;
+        left: auto;
+        margin: 0 auto;
+    }
+
+    .filters__filter {
+        margin: 0 10px;
+    }
+
+    .filters__filter:first-child {
+        margin-top: 20px;
+    }
+
+    .facilities {
+        margin-bottom: 20px;
+    }
+
+  
+}
+
+@media screen and (max-width: 400px) {
+    .filters {
+        left: auto;
+        right: auto;
+    }
+
+
+
 }
