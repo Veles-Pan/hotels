@@ -160,10 +160,12 @@
 }
 
 .filters__label {
+    display: block;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 5px;
+    width: 266px;
 }
 
 .filters__filter:first-child {
@@ -172,10 +174,12 @@
 
 .date {
     margin-bottom: 20px;
+    width: 266px;
 }
 
-.guests {
+.filter__guests {
     margin-bottom: 30px;
+    width: 266px;
 }
 
 
@@ -199,9 +203,7 @@
     outline-style: none;
 }
 
-.guests {
-    max-width: 266px;
-}
+
 
 .cost {
     max-width: 266px;
