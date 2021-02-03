@@ -1,0 +1,19 @@
+.registration-intro__submit {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-style: none;
+    border-radius: 22px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    outline-style: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.registration-intro__submit:hover {
+    cursor: pointer;
+    opacity: .75;
+}

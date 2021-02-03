@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+        <link rel="stylesheet" href="./pages/registration.css">
+    </head>
+
+    <body class="root">
+
+        <header class="header">
+            <div class="header__menu">
+            <img class="header__logo" alt="" src="./images/Logo.svg">
+            <div class="header__popup-menu">
+            <nav class="navigation">
+                <a class="navigation__element" href="#" target="_self">О&nbsp;нас</a>
+                <a class="navigation__element" href="#" target="_self">Услуги</a>
+                <a class="navigation__element" href="#" target="_self">Вакансии</a>
+                <a class="navigation__element" href="#" target="_self">Новости</a>
+                <a class="navigation__element" href="#" target="_self">Соглашения</a>
+            </nav>
+            <div class="header__buttons">
+                <a class="header__login">Войти</a>
+                <a class="header__registration" href="./registration.html">Зарегистрироваться</a>
+            </div>
+        </div>
+            <button class="header__popup-button">Меню</button>
+        </div>
+        </header>
+
+        <main class="content">
+
+            <section class="registration-intro">
+                <form class="registration-intro__card">
+                    <h2 class="registration-intro__title">Регистрация аккаунта</h2>
+
+                    <input type="text" class="registration-intro__item" id="name" name="name" placeholder="Имя" required>
+                    <input type="text" class="registration-intro__item" id="surname" name="surname" placeholder="Фамилия" required>
+
+                    <div class="registration-intro__radios">
+                        <input type="radio" class="custom-radio" id="male" name="gender" value="male">
+                        <label class="registration-intro__about" for="male">Мужчина</label>
+
+                        <input type="radio" class="custom-radio" id="female" name="gender" value="female">
+                        <label class="registration-intro__about" for="female">Женщина</label>
+                    </div>
+
+                    <label for="birthdate" class="registration-intro__label">Дата рождения</label>
+                    <input type="date" class="registration-intro__item" id="birthdate" name="birthdate" required>
+
+                    <label for="email" class="registration-intro__label">Данные для входа в серсив</label>
+                    <input type="email" class="registration-intro__item" id="email" name="email" placeholder="Email" required>
+                    <input type="password" class="registration-intro__item" id="password" name="password" placeholder="Пароль" required>
+
+                    <button type="submit" class="registration-intro__submit">Зарегистрироваться</button>
+
+                    <div class="registration-intro__account">
+
+                        <p class="registration-intro__text">Уже есть аккаунт на Toxin</p>
+                        <a type="button" class="registration-intro__login" href="./login.html">Войти</a>
+
+                     </div>
+                </form>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__widgets">
+                <div class="footer__about">
+                    <img class="footer__logo" src="./images/Logo.svg" alt="лого">
+                    <p class="footer__text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+                </div>
+                <nav class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__element"><h3 class="footer__subtitle">Навигация</h3></li>
+                        <li class="footer__element"><a class="footer__link" href="#">О нас</a></li>
+                        <li class="footer__element"> <a class="footer__link" href="#">Новости</a></li>
+                        <li class="footer__element"><a class="footer__link" href="#">Служба поддержки</a></li>
+                        <li class="footer__element"><a class="footer__link" href="#">Услуги</a></li>
+                    </ul>
+                </nav>
+                <ul class="footer__list">
+                    <li class="footer__element"><h3 class="footer__subtitle">О нас</h3></li>
+                    <li class="footer__element"><a class="footer__link" href="#">О сервисе</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Наша команда</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Вакансии</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Инвесторы</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__element"><h3 class="footer__subtitle">Служба поддержки</h3></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Соглашения</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Сообщества</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Связь с нами</a></li>
+                </ul>
+                <ul class="footer__list footer__list_subscribe">
+                    <li class="footer__element"><h3 class="footer__subtitle">Подписка</h3></li>
+                    <li class="footer__element"><p class="footer__text">Получайте специальные предложения и новости сервиса</p></li>
+                    <li class="footer__element"><input class="footer__email" type="email" placeholder="Email"></li>
+                </ul>
+            </div>
+            <div class="footer__bar">
+                <img class="footer__logo footer__logo_bar" src="./images/Logo.svg" alt="лого">
+                <p class="footer__copyright">Copyright &copy;&nbsp;2018 Toxin отель. Все права зачищены.</p>
+                <div class="footer__social">
+                    <a href="#"><img class="footer__social-link" src="./images/twitter.svg" alt="твиттер"></a>
+                    <a href="#"><img class="footer__social-link" src="./images/facebook.svg" alt="фейсбук"></a>
+                    <a href="#"><img class="footer__social-link" src="./images/instagram.svg" alt="инстаграм"></a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>

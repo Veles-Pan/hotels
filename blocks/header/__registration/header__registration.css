@@ -1,5 +1,4 @@
 .header__registration {
-
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-style: none;
     border-radius: 22px;
@@ -10,6 +9,7 @@
     color: #FFFFFF;
     outline-style: none;
     padding: 8px 20px;
+    text-decoration: none;
 }
 
 .header__registration:hover {
