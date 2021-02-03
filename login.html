@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="./pages/login.css">
+    </head>
+
+    <body class="root">
+
+        <header class="header">
+            <div class="header__menu">
+            <img class="header__logo" alt="" src="./images/Logo.svg">
+            <div class="header__popup-menu">
+            <nav class="navigation">
+                <a class="navigation__element" href="#" target="_self">О&nbsp;нас</a>
+                <a class="navigation__element" href="#" target="_self">Услуги</a>
+                <a class="navigation__element" href="#" target="_self">Вакансии</a>
+                <a class="navigation__element" href="#" target="_self">Новости</a>
+                <a class="navigation__element" href="#" target="_self">Соглашения</a>
+            </nav>
+            <div class="header__buttons">
+                <a class="header__login" href="./login.html">Войти</a>
+                <a class="header__registration" href="./registration.html">Зарегистрироваться</a>
+            </div>
+        </div>
+            <button class="header__popup-button">Меню</button>
+        </div>
+        </header>
+
+        <main class="content">
+
+            <section class="login-intro">
+                <form class="login-intro__card">
+                    <h2 class="login-intro__title">Войти</h2>
+
+                    <input type="email" class="login-intro__item" id="email" name="email" placeholder="Email" required>
+                    <input type="password" class="login-intro__item" id="password" name="password" placeholder="Пароль" required>
+
+                    <button type="submit" class="login-intro__submit">Войти</button>
+
+                    <div class="login-intro__account">
+
+                        <p class="login-intro__text">Нет аккаунта на Toxin?</p>
+                        <a type="button" class="login-intro__registration" href="./registration.html">Создать</a>
+
+                     </div>
+                </form>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__widgets">
+                <div class="footer__about">
+                    <img class="footer__logo" src="./images/Logo.svg" alt="лого">
+                    <p class="footer__text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+                </div>
+                <nav class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__element"><h3 class="footer__subtitle">Навигация</h3></li>
+                        <li class="footer__element"><a class="footer__link" href="#">О нас</a></li>
+                        <li class="footer__element"> <a class="footer__link" href="#">Новости</a></li>
+                        <li class="footer__element"><a class="footer__link" href="#">Служба поддержки</a></li>
+                        <li class="footer__element"><a class="footer__link" href="#">Услуги</a></li>
+                    </ul>
+                </nav>
+                <ul class="footer__list">
+                    <li class="footer__element"><h3 class="footer__subtitle">О нас</h3></li>
+                    <li class="footer__element"><a class="footer__link" href="#">О сервисе</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Наша команда</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Вакансии</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Инвесторы</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__element"><h3 class="footer__subtitle">Служба поддержки</h3></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Соглашения</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Сообщества</a></li>
+                    <li class="footer__element"><a class="footer__link" href="#">Связь с нами</a></li>
+                </ul>
+                <ul class="footer__list footer__list_subscribe">
+                    <li class="footer__element"><h3 class="footer__subtitle">Подписка</h3></li>
+                    <li class="footer__element"><p class="footer__text">Получайте специальные предложения и новости сервиса</p></li>
+                    <li class="footer__element"><input class="footer__email" type="email" placeholder="Email"></li>
+                </ul>
+            </div>
+            <div class="footer__bar">
+                <img class="footer__logo footer__logo_bar" src="./images/Logo.svg" alt="лого">
+                <p class="footer__copyright">Copyright &copy;&nbsp;2018 Toxin отель. Все права зачищены.</p>
+                <div class="footer__social">
+                    <a href="#"><img class="footer__social-link" src="./images/twitter.svg" alt="твиттер"></a>
+                    <a href="#"><img class="footer__social-link" src="./images/facebook.svg" alt="фейсбук"></a>
+                    <a href="#"><img class="footer__social-link" src="./images/instagram.svg" alt="инстаграм"></a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>

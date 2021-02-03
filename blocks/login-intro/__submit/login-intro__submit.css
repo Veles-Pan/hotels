@@ -1,0 +1,18 @@
+.login-intro__submit {
+    padding: 7px 18px;
+    background-color: #ffffff;
+    border-radius: 22px;
+    border: 2px solid #BC9CFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #BC9CFF;
+    outline: none;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.login-intro__submit:hover {
+    cursor: pointer;
+    opacity: .75;
+}

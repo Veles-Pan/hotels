@@ -8,6 +8,7 @@
     line-height: 1.25;
     color: #BC9CFF;
     margin-right: 20px;
+    text-decoration: none;
 }
 
 .header__login:hover {
