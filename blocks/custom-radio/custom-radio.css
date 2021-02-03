@@ -1,3 +1,4 @@
+
 .custom-radio:checked,
 .custom-radio:not(:checked) {
     position: absolute;
@@ -11,7 +12,6 @@
     cursor: pointer;
     line-height: 20px;
     display: inline-block;
-    color: #666;
 }
 
 .custom-radio:checked + label:before,
@@ -52,3 +52,4 @@
     -webkit-transform: scale(1);
     transform: scale(1);
 }
+

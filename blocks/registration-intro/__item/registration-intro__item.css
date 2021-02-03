@@ -22,3 +22,7 @@
     outline: none;
     border: 1px solid rgba(31, 32, 65, 0.5);
 }
+
+.registration-intro__item::-webkit-input-placeholder {
+    opacity: .75;
+}
