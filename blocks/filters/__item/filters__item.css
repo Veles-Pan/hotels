@@ -12,6 +12,9 @@
     font-family: inherit;
     height: 44px;
     padding-left: 15px;
+    background-image: url('../../../images/expand_more.svg');
+    background-position: calc(100% - .5rem), 100% 0;
+    background-repeat: no-repeat;
 }
 
 .filters__item:focus {
