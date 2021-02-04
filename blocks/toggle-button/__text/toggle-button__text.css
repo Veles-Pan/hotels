@@ -1,0 +1,10 @@
+.toggle-button__text {
+    font-size: 14px;
+    line-height: 1.7;
+    opacity: .75;
+    margin-left: 10px;
+}
+
+.toggle-button__text:hover {
+    cursor: pointer;
+}
