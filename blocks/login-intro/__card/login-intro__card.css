@@ -11,3 +11,10 @@
     z-index: 1;
     padding: 30px;
 }
+
+@media screen and (max-width: 380px) {
+    .login-intro__card {
+        padding: 10px;
+        max-width: 380px;
+    }
+}
